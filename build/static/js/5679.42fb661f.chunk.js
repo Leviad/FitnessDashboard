@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmedux=self.webpackChunkmedux||[]).push([[5679],{15679:function(e,t,u){u.r(t);var a=u(39314),f=u(56092),n=u(80184);t.default=function(){return(0,n.jsx)(a.Z,{title:"Medical staff",children:(0,n.jsx)(f.Z,{variant:"staff"})})}}}]);
+//# sourceMappingURL=5679.42fb661f.chunk.js.map
