@@ -93,3 +93,19 @@ export const Footer = styled.div`
   background-size: 60px 60px;
   border-top: 0px;  
 `
+
+export const LightBPM = styled.span`  
+  color:white;
+`
+
+export const ModerateBPM = styled.span`  
+  color:blue;
+`
+
+export const HardBPM = styled.span`  
+  color:orange;
+`
+
+export const VeryHardBPM = styled.span`  
+  color:orange;
+`

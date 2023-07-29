@@ -2,7 +2,7 @@
 import {colors} from '@styles/vars';
 
 // styled components
-import {Header, Main, Footer} from './style';
+import {Header, Main, Footer, LightBPM, ModerateBPM, HardBPM, VeryHardBPM} from './style';
 
 // components
 import Widget from '@components/Widget';
@@ -39,7 +39,26 @@ const Trainer = ({data}) => {
                     </div>
                     <div className="innerpart-right">
                     <i className="icon icon-heart"></i>
-                        <span className="text">{trineeStat.heartRate}</span>
+
+                    { trineeStat.heartRate < 100 ?
+                        <span className="text"  style={{color:'blue'}} >{trineeStat.heartRate}</span> : <span></span>
+                    }
+
+                    { trineeStat.heartRate >= 100 &&  trineeStat.heartRate < 152  ?
+                        <span className="text"  style={{color:'green'}} >{trineeStat.heartRate}</span> : <span></span>
+                    }
+
+                    { trineeStat.heartRate >= 152 &&  trineeStat.heartRate < 171  ?
+                        <span className="text"  style={{color:'orange'}} >{trineeStat.heartRate}</span> : <span></span>
+                    }
+
+                    { trineeStat.heartRate >= 171 ?
+                        <span className="text"  style={{color:'orange'}} >{trineeStat.heartRate}</span> : <span></span>
+                    }
+
+                    
+
+                       
                         <span className="titlesmall"> BPM</span>
                     </div>
                    
